@@ -1,2 +1,18 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Python files
+*.py linguist-language=Python
+
+# Jupyter notebooks
+*.ipynb filter=drop-crlf text
+
+# Ignore model weight files in diff
+*.h5 diff=bin
+*.pt diff=bin
+*.onnx diff=bin
+
+# CSVs and data files
+*.csv text
+*.tsv text
+*.json text
